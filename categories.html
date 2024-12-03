@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+    <title> View Recipes </title>
+</head>
+
+<body>
+
+    <header class="home-nav"> 
+        <nav>
+            <div class="logoDiv">
+            <p id="brand-name"> Delicious <br>Discoveries </p>
+            <a href="home.html" target="_self" > <img src="logo.png" alt="logo" id="logo" width="85"> </a>
+         </div>
+            <div class="navigation"> 
+             <div class="menu-icon" onclick="toggleMenu()">☰</div>
+             <div class="menu-dropdown" id="menuDropdown">
+               <a href="home.html">HOME</a>
+               <a href="about.html">ABOUT US</a>
+               <a href="contact.html">CONTACT</a>
+               <a href="service.html">SERVICE</a>
+             </div>    
+            </div>
+            <div class="searchwtbar">
+            <input type="text" id="search-bar" placeholder="Find a recipe">  
+            <img src="search1.png" alt="logo search"  width="23">
+     </div>
+        </nav>
+     </header>
+    
+    <main>
+        <p id="categories"> CATEGORIES </p>
+        <hr>
+        <div class="foodCategories">
+            <div class="main">
+            <img src="Main dish.jpg" alt="Category 1" class="foodCategoryImage" onclick="window.location.href='Main.html';">
+            <p class="description">Main Dish</p>
+        </div>
+            <div class="soup">
+            <img src="Soup.png" alt="Category 2" class="foodCategoryImage" onclick="window.location.href='Soups.html';">
+            <p class="description">Soups</p>
+        </div>
+            <div class="dessert">
+            <img src="Halo-halo.jpg" alt="Category 3" class="foodCategoryImage" onclick="window.location.href='Desserts.html';">
+            <p class="description">Desserts</p>
+        </div>
+            <div class="salad">
+            <img src="Salad.jpg" alt="Category 4" class="foodCategoryImage" onclick="window.location.href='Salads.html';">
+            <p class="description">Salads</p>
+        </div>
+            <div class="appetizer">
+            <img src="AppetizerC.png" alt="Category 5" class="foodCategoryImage" onclick="window.location.href='Appetizer.html';">
+            <p class="description">Appetizers</p>
+        </div>     
+            </div> 
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

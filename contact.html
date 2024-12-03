@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Contact Us </title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header class="home-nav"> 
+        <nav>
+            <div class="logoDiv">
+            <p id="brand-name"> Delicious <br>Discoveries </p>
+            <a href="home.html" target="_self" > <img src="logo.png" alt="logo" id="logo" width="85"> </a>
+         </div>
+            <div class="navigation"> 
+             <div class="menu-icon" onclick="toggleMenu()">☰</div>
+             <div class="menu-dropdown" id="menuDropdown">
+               <a href="home.html">HOME</a>
+               <a href="about.html">ABOUT US</a>
+               <a href="contact.html">CONTACT</a>
+               <a href="service.html">SERVICE</a>
+             </div>    
+            </div>
+            <div class="searchwtbar">
+            <input type="text" id="search-bar" placeholder="Find a recipe">  
+            <img src="search1.png" alt="logo search"  width="23">
+     </div>
+        </nav>
+     </header>
+
+    <main> 
+        <div class="bg-contact">
+        <p> We’d love to hear from you!  Please get in touch if you have any <br>
+            queries, suggestions for collaboration, or comments. You can <br>
+            reach us by filling out the form below.</p>
+        </div>
+
+        <div class="bg-contactForm">
+            <form onsubmit="alert('Your input is submitted!.')"; >
+                <div class="nameInfo">
+            <p> First Name: </p> 
+            <input type="text" placeholder="Enter your first name..." required size="15"> 
+        </div>
+        <div class="lastName-info"> 
+            <p> Last Name: </p>
+            <input type="text" placeholder="Enter your last name..." required size="15"> 
+        </div>
+           <div class="emailInfo">
+            <p> Email: </p>
+            <input type="email" placeholder="@" required>
+           </div>
+
+           <div class="inputConcern">
+            <p> What can we help you with? </p>
+            <input type="textarea" id="input" placeholder="Write something..." required> 
+           </div>
+           <input type="submit" value="Submit">
+         </form>
+            </div>
+        <div class="contact-title">
+        <h2> contact us. </h2>
+    </div> 
+        <img src="contact.png" alt="bowl of salad" class="bg-food-contact" width="1170">
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
